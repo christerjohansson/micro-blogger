@@ -73,7 +73,7 @@ def combine_and_cleanup_data():
     
     try:
         # Import the combination function
-        from ..utils.combine_news_data import combine_news_data, cleanup_intermediate_files, rename_combined_file, display_summary
+        from ..utils.combine_news_data import combine_news_data, cleanup_intermediate_files, rename_combined_file, encrypt_news_file, display_summary
         
         # Run the combination process
         success = combine_news_data()
@@ -85,14 +85,17 @@ def combine_and_cleanup_data():
             # Rename combined file to news.json
             rename_success = rename_combined_file()
             
-            if cleanup_success and rename_success:
+            # Encrypt the news.json file
+            encrypt_success = encrypt_news_file()
+            
+            if cleanup_success and rename_success and encrypt_success:
                 # Display summary
                 display_summary()
-                print(f"\nFinal data has been saved to news.json")
+                print(f"\nFinal encrypted data has been saved to news.json")
                 print("Intermediate files have been removed.")
-                print("This file can now be used to display data on screen.")
+                print("This file can now be used to display data on screen (after decryption).")
             else:
-                print("Failed to complete cleanup or rename process.")
+                print("Failed to complete cleanup, rename, or encryption process.")
                 return False
         else:
             print("Failed to combine data.")
@@ -127,7 +130,7 @@ def main():
     
     if news_api_success and rss_success and combine_success:
         print("\nAll processes completed successfully!")
-        print("Final data is available in data/news.json")
+        print("Final encrypted data is available in data/news.json")
     else:
         print("\nSome processes failed. Check the output above for details.")
         return 1
