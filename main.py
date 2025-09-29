@@ -18,8 +18,8 @@ def main():
     
     # Import and run the main collector
     try:
-        import src.collectors.run_all_collectors
-        return src.collectors.run_all_collectors.main()
+        from src.collectors import run_all_collectors
+        return run_all_collectors.main()
     except Exception as e:
         print(f"Error running collectors: {e}")
         return 1

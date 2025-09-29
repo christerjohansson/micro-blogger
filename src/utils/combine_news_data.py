@@ -143,12 +143,53 @@ def combine_news_data():
         print(f"Error saving combined data: {e}")
         return False
 
+def cleanup_intermediate_files():
+    """Remove intermediate files (sweden.json and news_response_*.json)"""
+    try:
+        data_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
+        
+        # Remove sweden.json
+        sweden_file = os.path.join(data_dir, 'sweden.json')
+        if os.path.exists(sweden_file):
+            os.remove(sweden_file)
+            print("Removed sweden.json")
+        
+        # Remove all news_response_*.json files
+        pattern = os.path.join(data_dir, "news_response_*.json")
+        news_files = glob.glob(pattern)
+        for file in news_files:
+            os.remove(file)
+            print(f"Removed {os.path.basename(file)}")
+            
+        return True
+    except Exception as e:
+        print(f"Error during cleanup: {e}")
+        return False
+
+def rename_combined_file():
+    """Rename combined_news.json to news.json"""
+    try:
+        data_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
+        combined_file = os.path.join(data_dir, 'combined_news.json')
+        news_file = os.path.join(data_dir, 'news.json')
+        
+        if os.path.exists(combined_file):
+            os.rename(combined_file, news_file)
+            print("Renamed combined_news.json to news.json")
+            return True
+        else:
+            print("combined_news.json not found")
+            return False
+    except Exception as e:
+        print(f"Error renaming file: {e}")
+        return False
+
 def display_summary():
     """Display a summary of the combined data"""
     try:
         # Define the data directory and file path
         data_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
-        filepath = os.path.join(data_dir, 'combined_news.json')
+        filepath = os.path.join(data_dir, 'news.json')  # Updated to news.json
         
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -186,12 +227,23 @@ def main():
     success = combine_news_data()
     
     if success:
-        # Display summary
-        display_summary()
-        data_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
-        filepath = os.path.join(data_dir, 'combined_news.json')
-        print(f"\nData has been saved to {filepath}")
-        print("This file can now be used to display data on screen.")
+        # Cleanup intermediate files
+        cleanup_success = cleanup_intermediate_files()
+        
+        # Rename combined file to news.json
+        rename_success = rename_combined_file()
+        
+        if cleanup_success and rename_success:
+            # Display summary
+            display_summary()
+            data_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
+            filepath = os.path.join(data_dir, 'news.json')
+            print(f"\nFinal data has been saved to {filepath}")
+            print("Intermediate files have been removed.")
+            print("This file can now be used to display data on screen.")
+        else:
+            print("Failed to complete cleanup or rename process.")
+            return 1
     else:
         print("Failed to combine news data.")
         return 1

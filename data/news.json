@@ -1,5 +1,5 @@
 {
-  "combined_at": "2025-09-29T11:28:46.155414",
+  "combined_at": "2025-09-29T11:41:30.884344",
   "total_articles": 69,
   "sources": {
     "news_api_count": 19,
@@ -296,6 +296,34 @@
         "name": "Barometern"
       },
       "author": null,
+      "title": "Ödesmötet bokat – Kina bestämmer färdväg",
+      "description": "I oktober samlas Kinas kommunistparti för att diskutera landets väg framåt. Färdplanen kommer sannolikt att påverka stora delar av världen.",
+      "url": "https://www.barometern.se/odesmotet-bokat-kina-bestammer-fardvag/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:35:11 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Sting spelar i Uppsala ",
+      "description": "Sting spelar i Uppsala nästa sommar. Han uppträde i Sverige så sent som i juli 2025. Nu kommer han igen för en spelning 2026.",
+      "url": "https://www.barometern.se/noje/sting-spelar-i-uppsala/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:32:09 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
       "title": "Cirkustragedi i Tyskland – akrobat föll mot döden",
       "description": "En 27-årig cirkusakrobat har avlidit sedan hon störtat mot döden mitt under pågående föreställning, rapporterar tyska Bild.",
       "url": "https://www.barometern.se/cirkustragedi-i-tyskland-akrobat-foll-mot-doden/",
@@ -370,7 +398,7 @@
       "description": "Först flera års funderingar – sedan år med själva säljprocessen. Nu närmar det sig att Yvonne Lind lämnar – efter 32 år som Ica-handlare i Sandvik.",
       "url": "https://www.barometern.se/oland/hon-saljer-ica-butiken-pa-oland-det-ar-dags-for-nagot-nytt/",
       "urlToImage": null,
-      "publishedAt": "Mon, 29 Sep 2025 09:16:51 GMT",
+      "publishedAt": "Mon, 29 Sep 2025 09:40:02 GMT",
       "content": "",
       "source_type": "rss",
       "source_name": "Sweden RSS"
@@ -552,7 +580,7 @@
       "description": "Ett släp till en timmerbil välte på måndagen över väg 641. Olyckan orsakade stora störningar i trafiken. ",
       "url": "https://www.barometern.se/monsteras/slap-till-timmerbil-har-valt-vag-avstangd/",
       "urlToImage": null,
-      "publishedAt": "Mon, 29 Sep 2025 09:28:00 GMT",
+      "publishedAt": "Mon, 29 Sep 2025 09:39:01 GMT",
       "content": "",
       "source_type": "rss",
       "source_name": "Sweden RSS"
@@ -846,7 +874,7 @@
       "description": "Nästan var fjärde svensk har avstått från att boka ett läkarbesök eftersom vårdens e-tjänster är för svåra, enligt en ny rapport.  Såväl yngre som äldre personer upplever tjänsterna som krångliga.  – Så brukar det inte se ut. Det tyder på att de här tjänsterna inte är så bra som de borde vara, säger Måns Jonasson, expert på Internetstiftelsen.",
       "url": "https://www.barometern.se/e-tjanster-far-svenskar-att-avsta-lakarbesok/",
       "urlToImage": null,
-      "publishedAt": "Mon, 29 Sep 2025 03:30:59 GMT",
+      "publishedAt": "Mon, 29 Sep 2025 09:30:11 GMT",
       "content": "",
       "source_type": "rss",
       "source_name": "Sweden RSS"
@@ -940,20 +968,6 @@
         "name": "Barometern"
       },
       "author": null,
-      "title": "Följ Kalmar HC:s match i Södertälje",
-      "description": "Kalmar HC ställs mot Södertälje SK. Följ Henrik Erikssons direktrapportering nedan, med nedsläpp 19.00 på måndagskvällen.",
-      "url": "https://www.barometern.se/sport/folj-kalmar-hcs-match-i-sodertalje/",
-      "urlToImage": null,
-      "publishedAt": "Mon, 29 Sep 2025 02:00:00 GMT",
-      "content": "",
-      "source_type": "rss",
-      "source_name": "Sweden RSS"
-    },
-    {
-      "source": {
-        "name": "Barometern"
-      },
-      "author": null,
       "title": "Följ IK Oskarshamns bortamatch mot Mora",
       "description": "IK Oskarshamn gästar Mora i Wibe Arena. Barometern-OT:s Teodor Svensson direktrapporterar matchen som har nedsläpp 19.00 på måndagskvällen.",
       "url": "https://www.barometern.se/sport/folj-ik-oskarshamns-bortamatch-mot-mora/",
@@ -968,25 +982,11 @@
         "name": "Barometern"
       },
       "author": null,
-      "title": "Ilskan efter rysarsegern – ”oacceptabelt”",
-      "description": "De europeiska spelarna i Ryder Cup totalsågar den amerikanska publikens uppförande. – Det borde vara förbjudet, men det var uppenbarligen inte det den här veckan, säger Rory McIlroy.",
-      "url": "https://www.barometern.se/sport/ilskan-efter-rysarsegern-oacceptabelt/",
+      "title": "Följ Kalmar HC:s match i Södertälje",
+      "description": "Kalmar HC ställs mot Södertälje SK. Följ Henrik Erikssons direktrapportering nedan, med nedsläpp 19.00 på måndagskvällen.",
+      "url": "https://www.barometern.se/sport/folj-kalmar-hcs-match-i-sodertalje/",
       "urlToImage": null,
-      "publishedAt": "Mon, 29 Sep 2025 01:50:40 GMT",
-      "content": "",
-      "source_type": "rss",
-      "source_name": "Sweden RSS"
-    },
-    {
-      "source": {
-        "name": "Barometern"
-      },
-      "author": null,
-      "title": "Kina vill stärka samarbetet med Nordkorea",
-      "description": "Kina vill stärka samarbetet med Nordkorea och arbeta tillsammans för att motverka hegemoni, sade Kinas utrikesminister Wang Yi till sin nordkoreanska motsvarighet Choe Son-Hui i samband med ett möte dem emellan.",
-      "url": "https://www.barometern.se/kina-vill-starka-samarbetet-med-nordkorea/",
-      "urlToImage": null,
-      "publishedAt": "Mon, 29 Sep 2025 01:39:20 GMT",
+      "publishedAt": "Mon, 29 Sep 2025 02:00:00 GMT",
       "content": "",
       "source_type": "rss",
       "source_name": "Sweden RSS"

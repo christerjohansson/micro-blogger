@@ -19,9 +19,7 @@ micro-ai-blogger/
 │       ├── inspect_response.py
 │       └── compare_sources.py
 └── data/                   # Data storage
-    ├── news_response_*.json
-    ├── sweden.json
-    └── combined_news.json
+    └── news.json           # Final combined output (intermediate files are removed)
 ```
 
 ## Components
@@ -88,10 +86,12 @@ In `src/collectors/news_api_client.py`:
 
 ## Output Files
 
-All output files are stored in the `data/` directory:
-- `news_response_*.json`: Output files with News API responses
-- `sweden.json`: Output file with RSS feed data from Sweden
-- `combined_news.json`: Output file with combined data from both sources
+The final output is stored in the `data/` directory:
+- `news.json`: Final combined data from both sources (this is the only file kept)
+
+Intermediate files are automatically removed after processing:
+- `news_response_*.json`: Temporary News API responses
+- `sweden.json`: Temporary RSS feed data
 
 ## Notes
 
@@ -99,4 +99,4 @@ All output files are stored in the `data/` directory:
 - Different country codes may return different numbers of articles. For example, "us" returns more results than "se" (Sweden).
 - If you're getting 0 articles in the News API response, try changing the country or category.
 - The scripts include error handling and will save error responses to help with debugging.
-- The combined data file (`combined_news.json`) is formatted for easy use in displaying data on screen.
+- The final data file (`news.json`) is formatted for easy use in displaying data on screen.

@@ -65,25 +65,38 @@ def run_rss_collector():
     
     return True
 
-def combine_data():
-    """Combine data from both sources into a single JSON file"""
+def combine_and_cleanup_data():
+    """Combine data from both sources into a single JSON file and cleanup intermediates"""
     print("\n" + "=" * 50)
     print("Combining Data from Both Sources...")
     print("=" * 50)
     
     try:
         # Import the combination function
-        from ..utils.combine_news_data import combine_news_data, display_summary
+        from ..utils.combine_news_data import combine_news_data, cleanup_intermediate_files, rename_combined_file, display_summary
         
         # Run the combination process
         success = combine_news_data()
         
         if success:
-            # Display summary
-            print(f"\nData has been saved to combined_news.json")
-            print("This file can now be used to display data on screen.")
+            # Cleanup intermediate files
+            cleanup_success = cleanup_intermediate_files()
+            
+            # Rename combined file to news.json
+            rename_success = rename_combined_file()
+            
+            if cleanup_success and rename_success:
+                # Display summary
+                display_summary()
+                print(f"\nFinal data has been saved to news.json")
+                print("Intermediate files have been removed.")
+                print("This file can now be used to display data on screen.")
+            else:
+                print("Failed to complete cleanup or rename process.")
+                return False
         else:
             print("Failed to combine data.")
+            return False
             
         return success
         
@@ -101,8 +114,8 @@ def main():
     # Run RSS collector
     rss_success = run_rss_collector()
     
-    # Combine data
-    combine_success = combine_data()
+    # Combine data and cleanup
+    combine_success = combine_and_cleanup_data()
     
     # Summary
     print("\n" + "=" * 50)
@@ -110,11 +123,11 @@ def main():
     print("=" * 50)
     print(f"News API Collector: {'SUCCESS' if news_api_success else 'FAILED'}")
     print(f"RSS Collector: {'SUCCESS' if rss_success else 'FAILED'}")
-    print(f"Data Combination: {'SUCCESS' if combine_success else 'FAILED'}")
+    print(f"Data Combination & Cleanup: {'SUCCESS' if combine_success else 'FAILED'}")
     
     if news_api_success and rss_success and combine_success:
         print("\nAll processes completed successfully!")
-        print("Combined data is available in data/combined_news.json")
+        print("Final data is available in data/news.json")
     else:
         print("\nSome processes failed. Check the output above for details.")
         return 1
