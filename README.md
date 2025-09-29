@@ -54,6 +54,11 @@ micro-ai-blogger/
    git config --global user.email "your.email@example.com"
    ```
 
+4. Set up the upstream branch (if needed):
+   ```
+   git push --set-upstream origin main
+   ```
+
 ## Usage
 
 ### Run Both Collectors and Combine Data (Recommended)
@@ -152,3 +157,4 @@ To use with a CRON job and SSH key:
 - The scripts include error handling and will save error responses to help with debugging.
 - The final encrypted data file (`news.json`) is formatted for easy use in displaying data on screen (after decryption).
 - Git operations will only run if the data collection is successful.
+- Make sure your SSH keys are properly configured for GitHub if using SSH authentication.

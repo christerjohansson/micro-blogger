@@ -17,6 +17,17 @@ def is_git_repository():
     except Exception:
         return False
 
+def get_current_branch():
+    """Get the current git branch name"""
+    try:
+        result = subprocess.run(['git', 'rev-parse', '--abbrev-ref', 'HEAD'], 
+                              capture_output=True, text=True, cwd=os.getcwd())
+        if result.returncode == 0:
+            return result.stdout.strip()
+        return None
+    except Exception:
+        return None
+
 def git_commit_and_push(commit_message=None):
     """Commit and push changes to remote repository"""
     try:
@@ -49,14 +60,22 @@ def git_commit_and_push(commit_message=None):
         print(f"Committing changes with message: {commit_message}")
         subprocess.run(['git', 'commit', '-m', commit_message], check=True)
         
+        # Get current branch
+        branch = get_current_branch()
+        if not branch:
+            print("Could not determine current branch.")
+            return False
+        
         # Push changes to remote origin
-        print("Pushing changes to remote repository...")
-        push_result = subprocess.run(['git', 'push', 'origin', 'main'], capture_output=True, text=True)
+        print(f"Pushing changes to remote repository on branch '{branch}'...")
+        push_result = subprocess.run(['git', 'push', 'origin', branch], capture_output=True, text=True)
         
         if push_result.returncode != 0:
-            # Try pushing to master branch if main fails
-            print("Failed to push to 'main' branch, trying 'master'...")
-            push_result = subprocess.run(['git', 'push', 'origin', 'master'], capture_output=True, text=True)
+            # Check if we need to set upstream
+            if "set-upstream" in push_result.stderr:
+                print("Setting upstream branch...")
+                push_result = subprocess.run(['git', 'push', '--set-upstream', 'origin', branch], 
+                                           capture_output=True, text=True)
             
             if push_result.returncode != 0:
                 print(f"Error pushing changes: {push_result.stderr}")
