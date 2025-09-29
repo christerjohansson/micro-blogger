@@ -28,9 +28,55 @@ def get_current_branch():
     except Exception:
         return None
 
+def setup_synology_ssh_auth():
+    """Setup SSH authentication for GitHub using Synology keys"""
+    try:
+        # Define Synology key paths
+        project_dir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+        private_key = os.path.join(project_dir, "synology_key")
+        public_key = os.path.join(project_dir, "synology_key.pub")
+        
+        # Check if Synology keys exist
+        if os.path.exists(private_key) and os.path.exists(public_key):
+            print("Found Synology SSH keys")
+            
+            # Set proper permissions (important for SSH keys)
+            os.chmod(private_key, 0o600)
+            os.chmod(public_key, 0o644)
+            
+            # Create .ssh directory if it doesn't exist
+            ssh_dir = os.path.expanduser("~/.ssh")
+            os.makedirs(ssh_dir, exist_ok=True)
+            
+            # Create SSH config to use the Synology key
+            ssh_config = os.path.join(ssh_dir, "config")
+            config_content = """# GitHub configuration using Synology keys
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile {}
+    IdentitiesOnly yes
+""".format(private_key.replace("\\", "/"))  # Use forward slashes for SSH config
+            
+            # Write SSH config
+            with open(ssh_config, "w") as f:
+                f.write(config_content)
+            
+            print("Configured SSH to use Synology keys")
+            return True
+        else:
+            print("Synology SSH keys not found in project directory")
+            return False
+    except Exception as e:
+        print("Error setting up Synology SSH authentication: {}".format(e))
+        return False
+
 def git_commit_and_push(commit_message=None):
     """Commit and push changes to remote repository"""
     try:
+        # Setup Synology SSH authentication
+        setup_synology_ssh_auth()
+        
         # Check if this is a git repository
         if not is_git_repository():
             print("Not a git repository. Initializing...")
@@ -122,6 +168,40 @@ def check_git_status():
         print("Error checking git status: {}".format(e))
         return False
 
+def convert_remote_to_ssh():
+    """Convert HTTPS remote URL to SSH if needed"""
+    try:
+        # Get current remote URL
+        result = subprocess.run(['git', 'remote', 'get-url', 'origin'], 
+                              capture_output=True, text=True, cwd=os.getcwd())
+        if result.returncode == 0:
+            current_url = result.stdout.strip()
+            print("Current remote URL: {}".format(current_url))
+            
+            # Check if it's HTTPS and convert to SSH
+            if current_url.startswith("https://github.com/"):
+                # Convert to SSH format
+                ssh_url = current_url.replace("https://github.com/", "git@github.com:")
+                if not ssh_url.endswith(".git"):
+                    ssh_url += ".git"
+                
+                # Set the new SSH URL
+                subprocess.run(['git', 'remote', 'set-url', 'origin', ssh_url], check=True)
+                print("Converted remote URL to SSH: {}".format(ssh_url))
+                return True
+            elif current_url.startswith("git@github.com:"):
+                print("Remote URL is already using SSH.")
+                return True
+            else:
+                print("Remote URL is not a GitHub URL. No conversion needed.")
+                return True
+        else:
+            print("No remote 'origin' configured.")
+            return False
+    except Exception as e:
+        print("Error converting remote URL: {}".format(e))
+        return False
+
 if __name__ == "__main__":
     # Example usage
     print("Git Utilities")
@@ -130,6 +210,9 @@ if __name__ == "__main__":
     # Check if this is a git repository
     if is_git_repository():
         print("Git repository detected.")
+        
+        # Convert remote to SSH if needed
+        convert_remote_to_ssh()
         
         # Check status
         has_changes = check_git_status()

@@ -12,6 +12,10 @@ micro-ai-blogger/
 ├── .gitignore              # Git ignore file
 ├── README.md               # This file
 ├── install_dependencies.py # Dependency installation script
+├── setup_ssh.py            # SSH authentication setup script
+├── test_synology_ssh.py    # Synology SSH key test script
+├── synology_key            # Synology private SSH key
+├── synology_key.pub        # Synology public SSH key
 ├── src/                    # Source code
 │   ├── collectors/         # News collection scripts
 │   │   ├── news_api_client.py
@@ -69,6 +73,11 @@ This project is compatible with Python 3.8 and later versions.
    git push --set-upstream origin main
    ```
 
+5. Setup SSH authentication for GitHub (if using SSH keys):
+   ```
+   python setup_ssh.py
+   ```
+
 ## Usage
 
 ### Run Both Collectors and Combine Data (Recommended)
@@ -112,6 +121,16 @@ python src/utils/encryption_utils.py
 #### Git Operations
 ```
 python src/utils/git_utils.py
+```
+
+#### Setup SSH Authentication
+```
+python setup_ssh.py
+```
+
+#### Test Synology SSH Keys
+```
+python test_synology_ssh.py
 ```
 
 #### Inspect Latest Response
@@ -161,6 +180,30 @@ To use with a CRON job and SSH key:
 2. Configure the git remote to use SSH instead of HTTPS
 3. Set up the CRON job to run `python main.py` at desired intervals
 
+## SSH Key Authentication for Synology
+
+The application is configured to use the Synology SSH keys (`synology_key` and `synology_key.pub`) to connect to GitHub. The system will:
+
+1. Automatically detect the Synology keys in the project directory
+2. Set proper permissions on the keys (600 for private key, 644 for public key)
+3. Configure SSH to use these keys for GitHub connections
+4. Use SSH authentication for all git operations
+
+To ensure the keys work properly:
+
+1. Make sure the `synology_key.pub` content is added to your GitHub account:
+   - Go to GitHub Settings → SSH and GPG keys
+   - Click "New SSH key"
+   - Paste the content of `synology_key.pub` as the key
+   - Give it a title like "Synology Server"
+
+2. Test the SSH connection:
+   ```
+   python test_synology_ssh.py
+   ```
+
+3. The git utilities will automatically use these keys for authentication.
+
 ## Notes
 
 - The News API has different tiers of service. The free tier may have limitations on the number of requests per day.
@@ -169,5 +212,6 @@ To use with a CRON job and SSH key:
 - The scripts include error handling and will save error responses to help with debugging.
 - The final encrypted data file (`news.json`) is formatted for easy use in displaying data on screen (after decryption).
 - Git operations will only run if the data collection is successful.
-- Make sure your SSH keys are properly configured for GitHub if using SSH authentication.
 - The system gracefully handles missing dependencies (like cryptography) by skipping the affected functionality.
+- On Synology systems, the application will automatically use the provided SSH keys.
+- The Synology keys must have proper permissions (600 for private key) to work correctly.

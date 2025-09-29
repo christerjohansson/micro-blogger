@@ -29,7 +29,10 @@ def main():
             
             # Import git utilities
             sys.path.append(os.path.join(os.path.dirname(__file__), 'src', 'utils'))
-            from src.utils.git_utils import git_commit_and_push
+            from src.utils.git_utils import git_commit_and_push, convert_remote_to_ssh
+            
+            # Convert remote to SSH if needed
+            convert_remote_to_ssh()
             
             # Commit and push changes
             if git_commit_and_push():
@@ -41,7 +44,7 @@ def main():
             
         return result
     except Exception as e:
-        print(f"Error running collectors: {e}")
+        print("Error running collectors: {}".format(e))
         return 1
 
 if __name__ == "__main__":
