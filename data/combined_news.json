@@ -1,0 +1,995 @@
+{
+  "combined_at": "2025-09-29T11:28:46.155414",
+  "total_articles": 69,
+  "sources": {
+    "news_api_count": 19,
+    "rss_count": 50
+  },
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Move over Murdochs, the Ellisons are the new family dynasty shaking up US media - BBC",
+      "description": "Larry Ellison's relationship with Donald Trump has drawn scrutiny as the tech billionaire and his son strive to become major media moguls.",
+      "url": "https://www.bbc.com/news/articles/cr4qwwk0g0yo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/0f10/live/68429800-9b02-11f0-92db-77261a15b9d2.jpg",
+      "publishedAt": "2025-09-28T00:30:14Z",
+      "content": "Natalie ShermanBusiness reporter\r\nLarry Ellison at the White House with Donald Trump in January 2025\r\nTech billionaire Larry Ellison and his son, Hollywood producer David, have long walked the halls … [+8296 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Barron's"
+      },
+      "author": "Barron's",
+      "title": "Trump Stirs Pot in Feud With Powell via Truth Social Post - Barron's",
+      "description": null,
+      "url": "https://www.barrons.com/articles/trump-fed-powell-cartoon-truth-social-10e419f6",
+      "urlToImage": null,
+      "publishedAt": "2025-09-27T22:54:00Z",
+      "content": null,
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Usda.gov"
+      },
+      "author": null,
+      "title": "The Hillshire Brands Company Recalls Corn Dog and Sausage On A Stick Products Due To Possible Extraneous Matter Contamination | Food Safety and Inspection Service - fsis.usda.gov",
+      "description": null,
+      "url": "http://www.fsis.usda.gov/recalls-alerts/hillshire-brands-company-recalls-corn-dog-and-sausage-a-stick-products-due-possible",
+      "urlToImage": "https://www.fsis.usda.gov/sites/default/files/2021-03/MicrosoftTeams-image.png",
+      "publishedAt": "2025-09-27T22:32:54Z",
+      "content": "WASHINGTON, September 27, 2025 The Hillshire Brands Company, a Haltom City, Tex. establishment, is recalling approximately 58,000,000 pounds of corn dog and sausage on a stick products that may be co… [+2666 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "TheStreet"
+      },
+      "author": "Vuk Zdinjak",
+      "title": "White House may give Intel a huge gift - TheStreet",
+      "description": "Intel could benefit from an unexpected proposal.",
+      "url": "https://www.thestreet.com/technology/white-house-may-give-intel-a-huge-gift-",
+      "urlToImage": "https://www.thestreet.com/.image/ar_1.91%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_1200/MjE2OTk4NTMxNzIwODE2MTQ3/trump-says-intel-ceo-has-amazing-story-sets-cabinet-talks.jpg",
+      "publishedAt": "2025-09-27T22:15:58Z",
+      "content": "Lip-Bu Tan was appointed Intel CEO in March and given the difficult task of saving the company. He's been working on it and doing everything possible to fix the situation.\r\nHe trimmed the workforce a… [+3917 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Government to guarantee £1.5bn Jaguar Land Rover loan after cyber shutdown - BBC",
+      "description": "Ministers hope the loan, from a commercial bank and underwritten by the government, will give certainty to suppliers.",
+      "url": "https://www.bbc.com/news/articles/cgl15ykerlro",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1505/live/303c0ab0-9be6-11f0-bddd-5f1abb8b5445.jpg",
+      "publishedAt": "2025-09-27T21:00:13Z",
+      "content": "The government will underwrite a £1.5bn loan guarantee to Jaguar Land Rover (JLR) in a bid to support its suppliers as a cyber attack continues to halt production at the car maker. \r\nBusiness Secreta… [+3321 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Anthony Ha",
+      "title": "Beware coworkers who produce AI-generated ‘workslop’ - TechCrunch",
+      "description": "Researchers at consulting firm BetterUp Labs, in collaboration with Stanford Social Media Lab, have coined a new term to describe low-quality, AI-generated work",
+      "url": "https://techcrunch.com/2025/09/27/beware-coworkers-who-produce-ai-generated-workslop/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/07/GettyImages-939845776.jpg?resize=1200,801",
+      "publishedAt": "2025-09-27T19:36:04Z",
+      "content": "Researchers at consulting firm BetterUp Labs, in collaboration with Stanford Social Media Lab, have coined a new term to describe low-quality, AI-generated work: workslop.\r\nAs defined in an article p… [+996 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gothamist"
+      },
+      "author": "https://gothamist.com/staff/paige-oamek",
+      "title": "Brooklyn woman killed by Tesla driver in hit and run, NYPD says - Gothamist",
+      "description": "Police are searching for the driver of a blue Tesla who fled the scene.",
+      "url": "https://gothamist.com/news/brooklyn-woman-killed-in-hit-and-run-by-tesla-driver-nypd-says",
+      "urlToImage": "https://api-prod.gothamist.com/images/352921/fill-1200x650|format-webp|webpquality-85/",
+      "publishedAt": "2025-09-27T19:00:00Z",
+      "content": "A Brooklyn woman was killed after the driver of a Tesla struck her while she was on her bicycle early Saturday morning in Williamsburg and then sped off, police said.\r\nNYPD officials said they respon… [+1012 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "TheStreet"
+      },
+      "author": "Todd Campbell",
+      "title": "Wall Street billionaire sends one-word AI warning - TheStreet",
+      "description": "Hyperscalers are plowing hundreds of billions into artificial intelligence.",
+      "url": "https://www.thestreet.com/technology/wall-street-billionaire-sends-one-word-ai-warning",
+      "urlToImage": "https://www.thestreet.com/.image/ar_1.91%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_1200/MjE4MDMyODM0NDcwNzQ5Nzk4/david-einhorn-lead-1.jpg",
+      "publishedAt": "2025-09-27T18:03:00Z",
+      "content": "Artificial intelligence may seem like a new concept, but it's fascinated technologists, inventors, and science fiction buffs for decades.\r\nThe mathematician and computer scientist Alan Turing contemp… [+6146 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": "fortune",
+        "name": "Fortune"
+      },
+      "author": "Jason Ma",
+      "title": "The U.S. economy is running even hotter than previously thought, and GDP growth could reach 4% in Q3 - Fortune",
+      "description": "Stronger GDP also means the Federal Reserve will be under less pressure to lower rates aggressively.",
+      "url": "https://fortune.com/2025/09/27/economic-outlook-gdp-forecast-q3-4-percent-consumer-spending-income-recession-warning/",
+      "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2025/09/GettyImages-2236488788-e1758988274288.jpg?resize=1200,600",
+      "publishedAt": "2025-09-27T17:21:00Z",
+      "content": "While some on Wall Street are worried about a recession, recent economic data show that GDP growth is actually speeding up faster than earlier numbers indicated.On Thursday, second-quarter growth was… [+3009 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": "nbc-news",
+        "name": "NBC News"
+      },
+      "author": "Matt Lavietes",
+      "title": "BMW vehicles recalled over potential fire risk - NBC News",
+      "description": "The owners of nearly 200,000 BMWs should park their vehicles outside because they risk catching fire while parked or being driven, the National Highway Traffic Safety Administration announced Friday",
+      "url": "https://www.nbcnews.com/business/business-news/bmw-recall-fire-risk-rcna234069",
+      "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2024-10/241015-bmw-car-dealership-vl-358p-e9952a.jpg",
+      "publishedAt": "2025-09-27T17:10:00Z",
+      "content": "The owners of nearly 200,000 BMWs should park their vehicles outside because they risk catching fire while parked or being driven, the National Highway Traffic Safety Administration announced Friday.… [+1466 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "JONEL ALECCIA AP health writer",
+      "title": "After massive shrimp recalls, the FDA finds radioactive contamination in spices too - ABC News - Breaking News, Latest News and Videos",
+      "description": "Federal regulators have detected possible radioactive contamination in spices exported from Indonesia",
+      "url": "https://abcnews.go.com/Business/wireStory/after-massive-shrimp-recalls-fda-finds-radioactive-contamination-125977394",
+      "urlToImage": "https://i.abcnewsfe.com/a/d7408f38-d235-4c6d-baba-0558b3247360/wirestory_6b99a284026274c0f1c4fc3f62dc0798_16x9.jpg?w=1600",
+      "publishedAt": "2025-09-27T16:12:37Z",
+      "content": "Federal regulators have detected possible radioactive contamination in a second food product sent to the U.S. from Indonesia, even as recalls of potentially tainted shrimp continue to grow. The disco… [+4165 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": "associated-press",
+        "name": "Associated Press"
+      },
+      "author": "Rebecca Boone",
+      "title": "Thieves steal $1M worth in craft whiskey from Washington distillery - AP News",
+      "description": "Thieves have stolen 12,000 bottles of craft whiskey from Westland Distillery in a rare U.S. liquor heist. Nearly $1 million in product was stolen, including the distillery's sought-after limited edition Garryana whiskey. The Skagit Valley Sheriff's Office is …",
+      "url": "https://apnews.com/article/thieves-craft-whiskey-liquor-heist-westland-distillery-6d6de03c0ee35d4df689b5e480bdb33f",
+      "urlToImage": "https://dims.apnews.com/dims4/default/666669f/2147483647/strip/true/crop/2040x1148+0+106/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F9f%2F68%2F73b3549441ee834fa256946cc11f%2Fe9d58d3c4ecb4a7aadb86ef345cbea23",
+      "publishedAt": "2025-09-27T16:02:00Z",
+      "content": "Thieves who made off with 12,000 bottles of craft whiskey in a rare U.S. liquor heist this summer did more than just snag nearly $1 million worth of product -- they also spirited away nearly half the… [+4252 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "MarketWatch"
+      },
+      "author": "Joseph Adinolfi",
+      "title": "The AI hype is starting to fade on Wall Street. Here’s what investors need to know. - MarketWatch",
+      "description": "Oracle’s decision to tap the debt markets has helped revive scrutiny of AI spending. Wall Street analysts highlighted key risks in reports published this week.",
+      "url": "https://www.marketwatch.com/story/the-ai-hype-is-starting-to-fade-on-wall-street-heres-what-investors-need-to-know-2606749a",
+      "urlToImage": "https://images.mktw.net/im-93657462/social",
+      "publishedAt": "2025-09-27T13:19:00Z",
+      "content": "It might not seem like much based on the action in markets, but doubts about the durability of the artificial-intelligence trade were having a moment on Wall Street this week.\r\nSeveral high-profile a… [+457 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "MarketWatch"
+      },
+      "author": "Jeffry Bartash",
+      "title": "Recession seems far off — that’s the good news. Yet the economy is also far from trouble-free. - MarketWatch",
+      "description": "Inflation is still a sore spot for Americans",
+      "url": "https://www.marketwatch.com/story/recession-seems-far-off-thats-the-good-news-yet-the-economy-is-also-far-from-trouble-free-5c782803",
+      "urlToImage": "https://images.mktw.net/im-47977320/social",
+      "publishedAt": "2025-09-27T13:00:00Z",
+      "content": "Enough trouble spots emerged in the U.S. economy to coax the Federal Reserve to cut interest rates last week but it turns out the news isnt all that bad.\r\nA bevy of recent reports also show household… [+216 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Information"
+      },
+      "author": "Anissa Gardizy, Nick Wingfield, Wayne Ma, Qianer Liu",
+      "title": "How Jensen Huang is Using Nvidia Cash to Rule the AI Economy - The Information",
+      "description": "Even by the standards of one of the most prodigious dealmakers in tech, the past month or so has been a head-spinning one for Nvidia’s Jensen Huang. Just in September, Nvidia agreed to buy any unused Nvidia graphics processing units that cloud provider CoreWe…",
+      "url": "https://www.theinformation.com/articles/jensen-huang-using-nvidia-cash-rule-ai-economy",
+      "urlToImage": "https://tii.imgix.net/production/articles/15828/7a1efe4b-e7fc-4582-9fed-c96b94edad2c.jpg?fm=jpg&auto=compress&w=1200&frame=0",
+      "publishedAt": "2025-09-27T13:00:00Z",
+      "content": null,
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Lauren Feiner",
+      "title": "Can Google be trusted without a break up? - The Verge",
+      "description": "The Justice Department argued that Google will likely continue to monopolize ad tech markets unless a judge removes its incentives to do so.",
+      "url": "https://www.theverge.com/policy/786930/google-doj-ad-tech-remedies-break-up-trust",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK452_Google_Antitrust__Monopoly_Kristen_Radtke.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "publishedAt": "2025-09-27T13:00:00Z",
+      "content": "<ul><li></li><li></li><li></li></ul>\r\nCan Google be trusted without a break up?\r\nAs long as Google still has the means and incentives to accrue dominance, the DOJ argues, it will likely do so again.\r… [+7365 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Energy-reporters.com"
+      },
+      "author": "Rosemary Potter",
+      "title": "\"They Built Reactors That Think For Themselves\": Nuclear Scientists Reveal Autonomous Microreactors Operating Without Human Control - Energy Reporters",
+      "description": "In a significant advancement for nuclear energy, scientists in the United States have developed a groundbreaking physics-based algorithm designed for nuclear",
+      "url": "https://www.energy-reporters.com/industry/they-built-reactors-that-think-for-themselves-nuclear-scientists-reveal-autonomous-microreactors-operating-without-human-control/",
+      "urlToImage": "https://www.energy-reporters.com/wp-content/uploads/2025/09/nuclear-microreactors-reveal-secret-power-trick-that-could-change-everything-about-your-homes-energy-bills-forever.jpg",
+      "publishedAt": "2025-09-27T12:59:27Z",
+      "content": "<table><tr><td>IN A NUTSHELL</td></tr><tr><td><ul><li> Scientists developed a physics-based algorithm for nuclear microreactors to adjust power autonomously.</li><li> The MPC controller optimizes con… [+6321 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Bring Me The News"
+      },
+      "author": "Adam Uren",
+      "title": "Spirit Airlines to end services at Minneapolis-St. Paul International Airport - Bring Me The News",
+      "description": "Spirit Airlines will no longer serve Minneapolis-St. Paul International Airport as of December, the company has confirmed.",
+      "url": "https://bringmethenews.com/minnesota-lifestyle/spirit-airlines-to-end-services-at-minneapolis-st-paul-international-airport",
+      "urlToImage": "https://bringmethenews.com/.image/ar_1.91%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_1200/MTczODcwNDUyNTMwMjI3MDQx/spirit_a319_exterior_3_newlivery.jpg",
+      "publishedAt": "2025-09-27T12:38:30Z",
+      "content": "Spirit Airlines will no longer serve Minneapolis-St. Paul International Airport as of December, the company has confirmed.\r\nThe news was originally reported by AirlineGeeks, which obtained an interna… [+956 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "Andrew Ackerman, Rachel Lerman",
+      "title": "Trump’s fresh tariffs could inflate consumer prices in months to come - The Washington Post",
+      "description": "President Donald Trump has announced new sector-specific tariffs on pharmaceuticals, furniture, and other goods, which could exacerbate inflation.",
+      "url": "https://www.washingtonpost.com/business/2025/09/27/trump-tariffs-inflation-elevated/",
+      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/4KML3IVGCRMR3ND7ZU26IVSJM4.JPG&w=1440",
+      "publishedAt": "2025-09-27T11:31:50Z",
+      "content": "The presidents latest duties on pharmaceuticals, trucks and furniture take effect Oct. 1, potentially driving up costs for households as core inflation holds at 2.9 percent.\r\nUpdated September 27, 20… [+26 chars]",
+      "source_type": "news_api",
+      "source_name": "News API"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Cirkustragedi i Tyskland – akrobat föll mot döden",
+      "description": "En 27-årig cirkusakrobat har avlidit sedan hon störtat mot döden mitt under pågående föreställning, rapporterar tyska Bild.",
+      "url": "https://www.barometern.se/cirkustragedi-i-tyskland-akrobat-foll-mot-doden/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:16:32 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Män hittades misshandlade: ”Blivit stampad i ansiktet”",
+      "description": "Polisen hittade natten till lördagen två män som blivit misshandlade i centrala Oskarshamn. – Åtminstone tre andra män ska ha varit delaktiga i misshandeln, säger polisens förundersökningsledare Thom Stierna.",
+      "url": "https://www.barometern.se/oskarshamn/man-hittades-misshandlade-blivit-stampad-i-ansiktet/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:25:31 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "38-åring startar nytt restaurangföretag i Mörbylånga",
+      "description": "",
+      "url": "https://www.barometern.se/38-aring-startar-nytt-restaurangforetag-i-morbylanga/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:08:44 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Poliser får fängelse för grovt narkotikabrott",
+      "description": "Två poliser i södra Stockholm döms till långa fängelsestraff för grovt narkotikabrott, meddelar Svea hovrätt.  Poliserna menar att de haft goda intentioner med sitt agerande, men det räcker inte, enligt rätten.",
+      "url": "https://www.barometern.se/poliser-far-fangelse-for-grovt-narkotikabrott/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:28:16 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Poliskampanj ska lära barn om bomber",
+      "description": "Med en kampanj på sociala medier ska polisen sprida kunskap om att sprängmedel är livsfarligt, och motverka att barn utför sprängdåd åt gängen.",
+      "url": "https://www.barometern.se/poliskampanj-ska-lara-barn-om-bomber/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:01:29 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Hon säljer Ica-butiken på Öland: ”Det är dags för något nytt”",
+      "description": "Först flera års funderingar – sedan år med själva säljprocessen. Nu närmar det sig att Yvonne Lind lämnar – efter 32 år som Ica-handlare i Sandvik.",
+      "url": "https://www.barometern.se/oland/hon-saljer-ica-butiken-pa-oland-det-ar-dags-for-nagot-nytt/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:16:51 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Många oroliga för livet efter fotbollen",
+      "description": "Mer än en tredjedel av spelarna i damallsvenskan och elitettan känner regelbunden oro för livet efter karriären. Linköpings Cajsa Andersson, utbildad civilingenjör i medicinsk teknik, är inte en av dem. – Det är en trygghet, att jag inte behöver börja helt från början, säger den 32-åriga målvakten.",
+      "url": "https://www.barometern.se/sport/manga-oroliga-for-livet-efter-fotbollen/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:48:43 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Svenska soldater ska hjälpa Danmark stoppa drönare",
+      "description": "Svenska soldater och radarsystem ska hjälpa Danmark att ha koll på drönare under veckans toppmöten i Köpenhamn.",
+      "url": "https://www.barometern.se/svenska-soldater-ska-hjalpa-danmark-stoppa-dronare/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:47:29 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "EU återinför sanktioner mot Iran",
+      "description": "",
+      "url": "https://www.barometern.se/eu-aterinfor-sanktioner-mot-iran/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:23:44 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Författaren Nils Uddenberg är död",
+      "description": "Augustvinnaren, läkaren och författaren Nils Uddenberg är död, uppger SVT. Han blev 87 år.",
+      "url": "https://www.barometern.se/noje/forfattaren-nils-uddenberg-ar-dod/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:22:57 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Sjöfylleribrotten fortsätter att minska",
+      "description": "",
+      "url": "https://www.barometern.se/sjofylleribrotten-fortsatter-att-minska/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:20:19 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Stoltenberg: Trump ville sparka ut Norge ur Nato",
+      "description": "Donald Trump föreslog 2018 att Norge skulle uteslutas ur Nato, avslöjar militäralliansens tidigare chef Jens Stoltenberg i sin nya bok. – Kan vi sparka ut dem? Kan Norge i stället ha en ”svensk modell” om de inte betalar? ska Trump ha sagt.",
+      "url": "https://www.barometern.se/stoltenberg-trump-ville-sparka-ut-norge-ur-nato/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:28:08 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Vill ändra reglerna efter förlusten: ”Uppenbart”",
+      "description": "USA:s Ryder Cup-kapten vill ändra på reglerna efter att Europa fått en halv poäng då Viktor Hovland inte kunde spela. – Det måste vara uppenbart för alla i idrottsvärlden, säger Keegan Bradley.",
+      "url": "https://www.barometern.se/sport/vill-andra-reglerna-efter-forlusten-uppenbart/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:19:20 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Rekordmånga gästnätter i sommarens Turistsverige",
+      "description": "Svenska hotell och campingar hade en stark sommar, trots den svaga konjunkturen. Antalet gästnätter nådde en ny toppnivå, visar statistik från Tillväxtverket.",
+      "url": "https://www.barometern.se/rekordmanga-gastnatter-i-sommarens-turistsverige/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:08:33 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Havsnära villa seglar upp i topp: ”Som en annan värld”  ",
+      "description": "Här är länets mest klickade objekt på Hemnet i Kalmar län vecka 39. ",
+      "url": "https://www.barometern.se/kalmar-lan/havsnara-villa-seglar-upp-i-topp-som-en-annan-varld/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:00:00 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Stökigt på norra Öland – flera larm om misshandel ",
+      "description": "Polisen hade att göra på Öland under skördefesten. Under helgen hanterade man tre misshandlar på samma adress i Borgholm. ",
+      "url": "https://www.barometern.se/oland/stokigt-pa-norra-oland-flera-larm-om-misshandel/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:55:34 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Nystartat byggföretag i Borgholm",
+      "description": "",
+      "url": "https://www.barometern.se/nystartat-byggforetag-i-borgholm/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:34:44 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Skarpt föremål hittat i Fjärås",
+      "description": "Ett misstänkt farligt föremål hittades på morgonen i Fjärås i Kungsbacka. Enligt polisen bedöms föremålet, som säkrats av nationella bombskyddet, som skarpt.",
+      "url": "https://www.barometern.se/skarpt-foremal-hittat-i-fjaras/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:57:27 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Släp till timmerbil har vält – väg avstängd ",
+      "description": "Ett släp till en timmerbil välte på måndagen över väg 641. Olyckan orsakade stora störningar i trafiken. ",
+      "url": "https://www.barometern.se/monsteras/slap-till-timmerbil-har-valt-vag-avstangd/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 09:28:00 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Nystartat restaurangföretag i Mörbylånga",
+      "description": "",
+      "url": "https://www.barometern.se/nystartat-restaurangforetag-i-morbylanga/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:16:31 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Kristersson om drönarna: Allt talar för Ryssland",
+      "description": "Det är med största sannolikhet Ryssland som ligger bakom den senaste tidens drönarflygningar över Danmark, säger Ulf Kristersson – Allting talar för det, säger statsministern i TV4.",
+      "url": "https://www.barometern.se/kristersson-om-dronarna-allt-talar-for-ryssland/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:13:18 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Ukraina  får dryg miljard inför hård vinter",
+      "description": "Regeringen öronmärker 1,1 miljarder kronor ytterligare för ett civilt stödpaket till Ukraina. Nära hälften går till att säkra el och energi inför vintern.",
+      "url": "https://www.barometern.se/ukraina-far-dryg-miljard-infor-hard-vinter/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:33:27 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Danskt läkemedelsbolag storhandlar ",
+      "description": "",
+      "url": "https://www.barometern.se/danskt-lakemedelsbolag-storhandlar/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 06:36:17 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Akutmottagningen i Kalix tillfälligt flyttad",
+      "description": "",
+      "url": "https://www.barometern.se/akutmottagningen-i-kalix-tillfalligt-flyttad/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 06:29:17 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Alexis Wright: Vi behöver träna hjärnan",
+      "description": "Den Nobelpristippade australiska författaren Alexis Wright är inte rädd för att hennes verk ses som utmanande läsning. Hon vill hellre att de ska få lång livslängd. – Jag kan inte se mig själv skriva en bok som bara håller i tre till fyra veckor, säger hon när TT möter henne.",
+      "url": "https://www.barometern.se/noje/alexis-wright-vi-behover-trana-hjarnan/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:41:41 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Prislappen på Verisure 150 miljarder",
+      "description": "Larm- och säkerhetsbolaget Verisure är på väg till Stockholmsbörsen. Nu har prislappen satts på bolaget.",
+      "url": "https://www.barometern.se/prislappen-pa-verisure-150-miljarder/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 06:11:40 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Europas kapten hyllas: ”Låt oss göra det igen”",
+      "description": "Publik och spelare är överens – Europas Ryder Cup-kapten Luke Donald måste stanna två år till. – Han är den bästa kaptenen nånsin, säger Shane Lowry.",
+      "url": "https://www.barometern.se/sport/europas-kapten-hyllas-lat-oss-gora-det-igen/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 06:04:40 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Bil påkörd bakifrån – störningar i trafiken  ",
+      "description": "",
+      "url": "https://www.barometern.se/kalmar/bil-pakord-bakifran-storningar-i-trafiken/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 06:36:09 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Börsen öppnar på plus",
+      "description": "Stockholmsbörsen inleder nya veckan med stigande kurser och fortsätter därmed trenden från i fredags.",
+      "url": "https://www.barometern.se/borsen-oppnar-pa-plus/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:10:33 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Gammal orkan når Spanien – högsta varningsnivån",
+      "description": "Högsta varningsnivån för skyfall råder i dag i områden runt Barcelona och Valencia i nordöstra Spanien. ",
+      "url": "https://www.barometern.se/gammal-orkan-nar-spanien-hogsta-varningsnivan/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 05:27:26 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Henrik Schyffert regisserar pjäs om teaterliv",
+      "description": "Henrik Schyffert regisserar pjäsen ”Slutspelat”, med Krister Henriksson och Marie Göranzon i rollerna som sig själva.  – Det känns som att man är en raggare som får låna påvens glasvagn och sladda runt med, säger han.",
+      "url": "https://www.barometern.se/noje/henrik-schyffert-regisserar-pjas-om-teaterliv/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:27:22 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Rekordförsäljning för second hand",
+      "description": "",
+      "url": "https://www.barometern.se/rekordforsaljning-for-second-hand/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 05:02:19 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Läkarna vittnar: Barn skjuts i huvudet",
+      "description": "Utländska läkare och sjuksköterskor i Gazaremsan vittnar om barn som kommer in till sjukhusen med skottskador i huvudet, rapporterar P3 Nyheter Dokumentär. ",
+      "url": "https://www.barometern.se/lakarna-vittnar-barn-skjuts-i-huvudet/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 05:22:26 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Besökssuccé för Bokmässan",
+      "description": "Årets bokmässa i Göteborg lockade 95 700 besök, vilket är det största antalet sedan före pandemin, enligt P4 Göteborg.",
+      "url": "https://www.barometern.se/noje/besokssucce-for-bokmassan/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:11:21 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Stockholmsbörsen kan haka på Trumps uppdrag",
+      "description": "Kvartalsrapporter från bolagen på börsens huvudlista kan snart vara ett minne blott. President Donald Trump har gett myndigheter i USA i uppdrag att se över regelkravet. – Det tror jag mycket väl kan komma att sprida sig hit, säger Sverre Linton, chefsjurist på Aktiespararna.",
+      "url": "https://www.barometern.se/stockholmsborsen-kan-haka-pa-trumps-uppdrag/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 04:15:57 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Så många män har utsatts för våld i sin relation",
+      "description": "Var femte man utsätts någon gång i livet för våld i nära relation. I en ny rapport slår Jämställdhetsmyndigheten fast att flera aktörer kan göra mer för att upptäcka och förhindra.",
+      "url": "https://www.barometern.se/sa-manga-man-har-utsatts-for-vald-i-sin-relation/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 04:01:21 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Högsbybo återföll i brott – dagsböter efter skadegörelse",
+      "description": "En man från Högsby har dömts för olaga intrång och skadegörelse efter att ha krossat en ruta och tagit sig in på en avfallsanläggning i Köping i augusti.",
+      "url": "https://www.barometern.se/hogsby/hogsbybo-aterfoll-i-brott-dagsboter-efter-skadegorelse/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 04:00:00 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "”Om ett år kan Sverige få en handlingskraftig regering”",
+      "description": "Rikspolitik Om ett år är det val i Sverige. Då har vi möjlighet att vända utvecklingen för Sverige. Under de tre år som Ulf Kristersson har styrt med hjälp av Sverigedemokraterna så har Sverige blivit fattigare och farligare. ",
+      "url": "https://www.barometern.se/debatt/om-ett-ar-kan-sverige-fa-en-handlingskraftig-regering/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 04:00:00 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Kamp mot klockan – bomber förgiftar Östersjön",
+      "description": "1,6 miljoner ton ammunition ruttnar på Östersjöns och Nordsjöns bottnar. Skräpet från andra världskriget är en tickande bomb. När höljena rostar släpper de ut kemikalier som sakta förgiftar haven.",
+      "url": "https://www.barometern.se/kamp-mot-klockan-bomber-forgiftar-ostersjon/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 03:46:25 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "E-tjänster får svenskar att avstå läkarbesök",
+      "description": "Nästan var fjärde svensk har avstått från att boka ett läkarbesök eftersom vårdens e-tjänster är för svåra, enligt en ny rapport.  Såväl yngre som äldre personer upplever tjänsterna som krångliga.  – Så brukar det inte se ut. Det tyder på att de här tjänsterna inte är så bra som de borde vara, säger Måns Jonasson, expert på Internetstiftelsen.",
+      "url": "https://www.barometern.se/e-tjanster-far-svenskar-att-avsta-lakarbesok/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 03:30:59 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Gödsel läckte ut – anmälan om miljöbrott",
+      "description": "Under natten till måndagen läckte mellan 20 och 30 kubikmeter gödsel ut från en cistern på en lantgård söder om Kalmar.",
+      "url": "https://www.barometern.se/kalmar/godsel-lackte-ut-anmalan-om-miljobrott/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 03:14:30 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Spretigt på Asienbörserna",
+      "description": "Asienbörserna inleder veckans första handelsdag spretigt.",
+      "url": "https://www.barometern.se/spretigt-pa-asienborserna/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 03:03:17 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Lägenhet på Varvsholmen misstänks vara betald med illegala pengar",
+      "description": "Efter beslag av två lyxbilar och en större summa pengar från en 27-årig Kalmarman har polis nu tagit ytterligare stora tillgångar – av en nära släkting. Släktingens bostadsrätt på Varvsholmen är belagd med så kallad kvarstad för att kunna täcka upp för kontantinsatsen på drygt 400 000 kronor.  Dessutom misstänks numera båda männen för brott – grovt penningtvättsbrott. ",
+      "url": "https://www.barometern.se/kalmar/lagenhet-pa-varvsholmen-misstanks-vara-betald-med-illegala-pengar/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 07:35:47 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Lisa, 45, byter karriär – lämnar vården för vovvar",
+      "description": "Lisa Ödin hade jobbat som undersköterska inom olika delar av omsorgen i ett tiotal år. Men när hon såg en jobbannons på arbetsförmedlingen valde hon att testa något nytt. Nu går hon en utbildning för att bli hundfrisör. – Det är en chansning, säger hon.",
+      "url": "https://www.barometern.se/oskarshamn/lisa-45-byter-karriar-lamnar-varden-for-vovvar/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 08:30:26 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Bad Bunny till Super Bowl – efter Trump-kängan",
+      "description": "Artisten Bad Bunny kommer att stå för nästa års halvtidshow när Super Bowl avgörs i Santa Clara, Kalifornien. ”Det jag känner går bortom mig själv”, säger puertoricanen i ett uttalande.",
+      "url": "https://www.barometern.se/noje/bad-bunny-till-super-bowl-efter-trump-kangan/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 05:04:41 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Följ Nybro Vikings bortamatch mot AIK",
+      "description": "Nybro Vikings reser till huvudstaden för att möta AIK på Hovet. Följ Herman Rydeberg direktrapportering från matchen nedan. Nedsläpp 19.00 på måndagskvällen.",
+      "url": "https://www.barometern.se/sport/folj-nybro-vikings-bortamatch-mot-aik/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 02:00:00 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Följ Kalmar HC:s match i Södertälje",
+      "description": "Kalmar HC ställs mot Södertälje SK. Följ Henrik Erikssons direktrapportering nedan, med nedsläpp 19.00 på måndagskvällen.",
+      "url": "https://www.barometern.se/sport/folj-kalmar-hcs-match-i-sodertalje/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 02:00:00 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Följ IK Oskarshamns bortamatch mot Mora",
+      "description": "IK Oskarshamn gästar Mora i Wibe Arena. Barometern-OT:s Teodor Svensson direktrapporterar matchen som har nedsläpp 19.00 på måndagskvällen.",
+      "url": "https://www.barometern.se/sport/folj-ik-oskarshamns-bortamatch-mot-mora/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 02:00:00 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Ilskan efter rysarsegern – ”oacceptabelt”",
+      "description": "De europeiska spelarna i Ryder Cup totalsågar den amerikanska publikens uppförande. – Det borde vara förbjudet, men det var uppenbarligen inte det den här veckan, säger Rory McIlroy.",
+      "url": "https://www.barometern.se/sport/ilskan-efter-rysarsegern-oacceptabelt/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 01:50:40 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    },
+    {
+      "source": {
+        "name": "Barometern"
+      },
+      "author": null,
+      "title": "Kina vill stärka samarbetet med Nordkorea",
+      "description": "Kina vill stärka samarbetet med Nordkorea och arbeta tillsammans för att motverka hegemoni, sade Kinas utrikesminister Wang Yi till sin nordkoreanska motsvarighet Choe Son-Hui i samband med ett möte dem emellan.",
+      "url": "https://www.barometern.se/kina-vill-starka-samarbetet-med-nordkorea/",
+      "urlToImage": null,
+      "publishedAt": "Mon, 29 Sep 2025 01:39:20 GMT",
+      "content": "",
+      "source_type": "rss",
+      "source_name": "Sweden RSS"
+    }
+  ]
+}
