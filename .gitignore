@@ -147,3 +147,5 @@ data/
 
 # Encryption keys
 .env
+synology_key
+synology_key.pub
