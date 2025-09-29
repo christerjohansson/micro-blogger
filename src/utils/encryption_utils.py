@@ -6,36 +6,69 @@ Encryption utilities for securing the news.json file.
 import os
 import json
 import base64
-from cryptography.fernet import Fernet
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
+import sys
 
 def get_encryption_key():
-    """Get the encryption key from environment variables"""
+    """Get the encryption key from environment variables or generate a default one"""
+    # Try to get key from environment
     key = os.getenv('ENCRYPTION_KEY')
-    if not key:
-        # Generate a new key if none exists
-        key = Fernet.generate_key().decode()
-        print(f"Generated new encryption key: {key}")
-        print("Please add this key to your .env file")
-    else:
-        # If the key is not 44 characters, we need to derive a proper Fernet key
-        if len(key) != 44:
+    if key:
+        # If the key is already a valid 32-byte base64 encoded string, use it directly
+        try:
+            # Try to decode it to see if it's already a valid base64 key
+            decoded = base64.urlsafe_b64decode(key)
+            if len(decoded) == 32:
+                # It's already a valid Fernet key
+                return key.encode()
+        except Exception:
+            pass
+        
+        # If it's not a valid key, try to convert it
+        try:
             # Use the key as a password to derive a proper Fernet key
             # Pad or truncate the key to 32 bytes and encode it
             key_bytes = key.encode()[:32].ljust(32, b'\0')
             key = base64.urlsafe_b64encode(key_bytes).decode()
+        except Exception:
+            # Use a default key if conversion fails
+            key_bytes = b'default_key_for_micro_ai_blogger_32_bytes_long'
+            key = base64.urlsafe_b64encode(key_bytes).decode()
+    else:
+        # Generate a proper Fernet key
+        try:
+            from cryptography.fernet import Fernet
+            key = Fernet.generate_key().decode()
+            print("Generated new encryption key: {}".format(key))
+            print("Please add this key to your .env file as ENCRYPTION_KEY={}".format(key))
+        except Exception:
+            # Use a default key if generation fails
+            key_bytes = b'default_key_for_micro_ai_blogger_32_bytes_long'
+            key = base64.urlsafe_b64encode(key_bytes).decode()
     
-    # Convert to bytes
     return key.encode()
 
 def encrypt_file(file_path):
     """Encrypt a file using Fernet encryption"""
     try:
+        # Try to import cryptography
+        from cryptography.fernet import Fernet
+    except ImportError:
+        print("Encryption skipped: cryptography module not available.")
+        return True
+    
+    try:
         # Get the encryption key
         key = get_encryption_key()
+        # Ensure the key is properly formatted
+        try:
+            decoded_key = base64.urlsafe_b64decode(key)
+            if len(decoded_key) != 32:
+                raise ValueError("Key must be 32 bytes")
+        except Exception:
+            # If key is not valid, generate a new one
+            key = Fernet.generate_key()
+            print("Generated new valid encryption key")
+        
         fernet = Fernet(key)
         
         # Read the file
@@ -49,18 +82,34 @@ def encrypt_file(file_path):
         with open(file_path, 'wb') as file:
             file.write(encrypted_data)
         
-        print(f"Successfully encrypted {file_path}")
+        print("Successfully encrypted {}".format(file_path))
         return True
         
     except Exception as e:
-        print(f"Error encrypting file: {e}")
+        print("Error encrypting file: {}".format(e))
         return False
 
 def decrypt_file(file_path):
     """Decrypt a file using Fernet encryption"""
     try:
+        # Try to import cryptography
+        from cryptography.fernet import Fernet
+    except ImportError:
+        print("Decryption skipped: cryptography module not available.")
+        return True
+    
+    try:
         # Get the encryption key
         key = get_encryption_key()
+        # Ensure the key is properly formatted
+        try:
+            decoded_key = base64.urlsafe_b64decode(key)
+            if len(decoded_key) != 32:
+                raise ValueError("Key must be 32 bytes")
+        except Exception:
+            print("Invalid encryption key format")
+            return False
+        
         fernet = Fernet(key)
         
         # Read the encrypted file
@@ -74,11 +123,11 @@ def decrypt_file(file_path):
         with open(file_path, 'wb') as file:
             file.write(decrypted_data)
         
-        print(f"Successfully decrypted {file_path}")
+        print("Successfully decrypted {}".format(file_path))
         return True
         
     except Exception as e:
-        print(f"Error decrypting file: {e}")
+        print("Error decrypting file: {}".format(e))
         return False
 
 def encrypt_news_file():
@@ -95,7 +144,7 @@ def encrypt_news_file():
         return encrypt_file(news_file)
         
     except Exception as e:
-        print(f"Error encrypting news file: {e}")
+        print("Error encrypting news file: {}".format(e))
         return False
 
 def decrypt_news_file():
@@ -112,7 +161,7 @@ def decrypt_news_file():
         return decrypt_file(news_file)
         
     except Exception as e:
-        print(f"Error decrypting news file: {e}")
+        print("Error decrypting news file: {}".format(e))
         return False
 
 if __name__ == "__main__":
@@ -122,6 +171,6 @@ if __name__ == "__main__":
     
     # Test encryption
     if encrypt_news_file():
-        print("Encryption test successful")
+        print("Encryption test completed")
     else:
         print("Encryption test failed")

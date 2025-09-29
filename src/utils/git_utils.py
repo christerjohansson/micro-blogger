@@ -44,7 +44,7 @@ def git_commit_and_push(commit_message=None):
         # Get current timestamp for commit message if none provided
         if not commit_message:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            commit_message = f"Automated commit: News data update - {timestamp}"
+            commit_message = "Automated commit: News data update - {}".format(timestamp)
         
         # Add all changes
         print("Adding changes to git...")
@@ -57,7 +57,7 @@ def git_commit_and_push(commit_message=None):
             return True
         
         # Commit changes
-        print(f"Committing changes with message: {commit_message}")
+        print("Committing changes with message: {}".format(commit_message))
         subprocess.run(['git', 'commit', '-m', commit_message], check=True)
         
         # Get current branch
@@ -67,7 +67,7 @@ def git_commit_and_push(commit_message=None):
             return False
         
         # Push changes to remote origin
-        print(f"Pushing changes to remote repository on branch '{branch}'...")
+        print("Pushing changes to remote repository on branch '{}'...".format(branch))
         push_result = subprocess.run(['git', 'push', 'origin', branch], capture_output=True, text=True)
         
         if push_result.returncode != 0:
@@ -78,17 +78,17 @@ def git_commit_and_push(commit_message=None):
                                            capture_output=True, text=True)
             
             if push_result.returncode != 0:
-                print(f"Error pushing changes: {push_result.stderr}")
+                print("Error pushing changes: {}".format(push_result.stderr))
                 return False
         
         print("Successfully committed and pushed changes to remote repository.")
         return True
         
     except subprocess.CalledProcessError as e:
-        print(f"Error during git operation: {e}")
+        print("Error during git operation: {}".format(e))
         return False
     except Exception as e:
-        print(f"Unexpected error: {e}")
+        print("Unexpected error: {}".format(e))
         return False
 
 def setup_git_config(name, email):
@@ -96,10 +96,10 @@ def setup_git_config(name, email):
     try:
         subprocess.run(['git', 'config', '--global', 'user.name', name], check=True)
         subprocess.run(['git', 'config', '--global', 'user.email', email], check=True)
-        print(f"Git configuration set for {name} <{email}>")
+        print("Git configuration set for {} <{}>".format(name, email))
         return True
     except subprocess.CalledProcessError as e:
-        print(f"Error setting git configuration: {e}")
+        print("Error setting git configuration: {}".format(e))
         return False
 
 def check_git_status():
@@ -119,7 +119,7 @@ def check_git_status():
             print("Not a git repository or error occurred.")
             return False
     except Exception as e:
-        print(f"Error checking git status: {e}")
+        print("Error checking git status: {}".format(e))
         return False
 
 if __name__ == "__main__":

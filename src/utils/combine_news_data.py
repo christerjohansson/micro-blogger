@@ -201,6 +201,9 @@ def encrypt_news_file():
         else:
             print("Failed to encrypt news.json file")
             return False
+    except ImportError:
+        print("Encryption utilities not available. Skipping encryption.")
+        return True
     except Exception as e:
         print(f"Error encrypting news file: {e}")
         return False

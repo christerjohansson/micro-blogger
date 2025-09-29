@@ -11,6 +11,7 @@ micro-ai-blogger/
 ├── .env                    # Environment variables (encryption key)
 ├── .gitignore              # Git ignore file
 ├── README.md               # This file
+├── install_dependencies.py # Dependency installation script
 ├── src/                    # Source code
 │   ├── collectors/         # News collection scripts
 │   │   ├── news_api_client.py
@@ -26,6 +27,10 @@ micro-ai-blogger/
     └── news.json           # Final encrypted output (intermediate files are removed)
 ```
 
+## Python Compatibility
+
+This project is compatible with Python 3.8 and later versions.
+
 ## Components
 
 1. **News API Client** - Fetches business headlines from the US using the News API
@@ -38,6 +43,11 @@ micro-ai-blogger/
 ## Setup
 
 1. Install the required dependencies:
+   ```
+   python install_dependencies.py
+   ```
+   
+   Or manually install:
    ```
    pip install -r requirements.txt
    ```
@@ -128,6 +138,8 @@ The final output file (`news.json`) is encrypted using the Fernet encryption sch
 
 To decrypt the file for viewing, you would need to use the decryption utilities provided in `src/utils/encryption_utils.py`.
 
+If the cryptography module is not available, the system will skip encryption gracefully.
+
 ## Output Files
 
 The final output is stored in the `data/` directory:
@@ -158,3 +170,4 @@ To use with a CRON job and SSH key:
 - The final encrypted data file (`news.json`) is formatted for easy use in displaying data on screen (after decryption).
 - Git operations will only run if the data collection is successful.
 - Make sure your SSH keys are properly configured for GitHub if using SSH authentication.
+- The system gracefully handles missing dependencies (like cryptography) by skipping the affected functionality.
