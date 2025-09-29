@@ -19,7 +19,27 @@ def main():
     # Import and run the main collector
     try:
         from src.collectors import run_all_collectors
-        return run_all_collectors.main()
+        result = run_all_collectors.main()
+        
+        # If collection was successful, commit and push changes
+        if result == 0:
+            print("\n" + "=" * 50)
+            print("GIT OPERATIONS")
+            print("=" * 50)
+            
+            # Import git utilities
+            sys.path.append(os.path.join(os.path.dirname(__file__), 'src', 'utils'))
+            from src.utils.git_utils import git_commit_and_push
+            
+            # Commit and push changes
+            if git_commit_and_push():
+                print("Changes successfully committed and pushed to remote repository.")
+            else:
+                print("Failed to commit and push changes to remote repository.")
+        else:
+            print("Skipping git operations due to collection failure.")
+            
+        return result
     except Exception as e:
         print(f"Error running collectors: {e}")
         return 1

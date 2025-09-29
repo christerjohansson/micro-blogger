@@ -9,6 +9,7 @@ micro-ai-blogger/
 ├── main.py                 # Main entry point
 ├── requirements.txt        # Python dependencies
 ├── .env                    # Environment variables (encryption key)
+├── .gitignore              # Git ignore file
 ├── README.md               # This file
 ├── src/                    # Source code
 │   ├── collectors/         # News collection scripts
@@ -18,6 +19,7 @@ micro-ai-blogger/
 │   └── utils/              # Utility scripts
 │       ├── combine_news_data.py
 │       ├── encryption_utils.py
+│       ├── git_utils.py
 │       ├── inspect_response.py
 │       └── compare_sources.py
 └── data/                   # Data storage
@@ -31,12 +33,25 @@ micro-ai-blogger/
 3. **Unified Runner** - Runs both collectors with a single command
 4. **Data Combiner** - Combines data from both sources into a single JSON file
 5. **Encryption Utilities** - Encrypts the final data file for security
+6. **Git Utilities** - Automatically commits and pushes changes to remote repository
 
 ## Setup
 
 1. Install the required dependencies:
    ```
    pip install -r requirements.txt
+   ```
+
+2. Initialize git repository (if not already done):
+   ```
+   git init
+   git remote add origin <your-github-repo-url>
+   ```
+
+3. Set up git user configuration:
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
    ```
 
 ## Usage
@@ -46,6 +61,11 @@ Run both collectors and combine the data with one command:
 ```
 python main.py
 ```
+
+This will:
+1. Collect data from both news sources
+2. Combine and encrypt the data
+3. Automatically commit and push changes to the remote repository
 
 ### Individual Component Usage
 
@@ -72,6 +92,11 @@ python src/utils/combine_news_data.py
 #### Encrypt/Decrypt News File
 ```
 python src/utils/encryption_utils.py
+```
+
+#### Git Operations
+```
+python src/utils/git_utils.py
 ```
 
 #### Inspect Latest Response
@@ -107,6 +132,18 @@ Intermediate files are automatically removed after processing:
 - `news_response_*.json`: Temporary News API responses
 - `sweden.json`: Temporary RSS feed data
 
+## Git Integration
+
+The system automatically commits and pushes changes to the remote repository after successful data collection. This is useful for:
+- Tracking changes over time
+- Using with CRON jobs for automated updates
+- Deploying to servers with SSH key authentication
+
+To use with a CRON job and SSH key:
+1. Set up SSH key authentication with your GitHub account
+2. Configure the git remote to use SSH instead of HTTPS
+3. Set up the CRON job to run `python main.py` at desired intervals
+
 ## Notes
 
 - The News API has different tiers of service. The free tier may have limitations on the number of requests per day.
@@ -114,3 +151,4 @@ Intermediate files are automatically removed after processing:
 - If you're getting 0 articles in the News API response, try changing the country or category.
 - The scripts include error handling and will save error responses to help with debugging.
 - The final encrypted data file (`news.json`) is formatted for easy use in displaying data on screen (after decryption).
+- Git operations will only run if the data collection is successful.
